@@ -12,8 +12,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //titleScreen.backgroundColor = UIColor.white.withAlphaComponent(0)
+        //titleScreen.isOpaque = false
+        self.view.backgroundColor=UIColor(patternImage: UIImage(named:"background2")!)
     }
 
-
+    @IBOutlet weak var titleScreen: UIImageView!
+    
+    
 }
 
