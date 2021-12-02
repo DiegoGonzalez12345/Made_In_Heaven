@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B07B84B727593DFB00B85DD5 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B84B627593DFB00B85DD5 /* FirstScreen.swift */; };
 		B0A7CAEE26EBC0C300F02461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A7CAED26EBC0C300F02461 /* AppDelegate.swift */; };
 		B0A7CAF026EBC0C300F02461 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A7CAEF26EBC0C300F02461 /* SceneDelegate.swift */; };
 		B0A7CAF226EBC0C300F02461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A7CAF126EBC0C300F02461 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B07B84B627593DFB00B85DD5 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		B0A7CAEA26EBC0C300F02461 /* Made_In_Heaven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Made_In_Heaven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A7CAED26EBC0C300F02461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A7CAEF26EBC0C300F02461 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				B0A7CAED26EBC0C300F02461 /* AppDelegate.swift */,
 				B0A7CAEF26EBC0C300F02461 /* SceneDelegate.swift */,
+				B07B84B627593DFB00B85DD5 /* FirstScreen.swift */,
 				B0A7CAF126EBC0C300F02461 /* ViewController.swift */,
 				B0A7CAF326EBC0C300F02461 /* Main.storyboard */,
 				B0A7CAF626EBC0C400F02461 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07B84B727593DFB00B85DD5 /* FirstScreen.swift in Sources */,
 				B0A7CAF226EBC0C300F02461 /* ViewController.swift in Sources */,
 				B0A7CAEE26EBC0C300F02461 /* AppDelegate.swift in Sources */,
 				B0A7CAF026EBC0C300F02461 /* SceneDelegate.swift in Sources */,
