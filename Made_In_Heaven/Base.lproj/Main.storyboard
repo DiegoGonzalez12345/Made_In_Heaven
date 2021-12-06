@@ -38,14 +38,15 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="standarrow" translatesAutoresizingMaskIntoConstraints="NO" id="xrx-WS-TUl">
                                                 <rect key="frame" x="0.0" y="0.0" width="404" height="200"/>
                                                 <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="0dY-9b-TAz" appends="YES" id="9RK-Oq-sHj"/>
-                                                </connections>
                                             </imageView>
                                         </subviews>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="TMm-jV-P6A"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Ae6-El-Pxb" appends="YES" id="4Ow-Uq-uwe"/>
+                                        </connections>
                                     </stackView>
                                 </subviews>
                                 <gestureRecognizers/>
@@ -62,29 +63,88 @@
                     <navigationItem key="navigationItem" id="c59-C5-Hft"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="0dY-9b-TAz">
+                <tapGestureRecognizer id="Ae6-El-Pxb">
                     <connections>
-                        <segue destination="5bR-YS-Fp1" kind="show" id="NNJ-dE-zHq"/>
+                        <segue destination="5bR-YS-Fp1" kind="show" identifier="firstSegue" id="w7o-Ox-rFO"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="73.660714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--First Screen-->
         <scene sceneID="gal-Wc-enH">
             <objects>
-                <viewController id="5bR-YS-Fp1" sceneMemberID="viewController">
+                <viewController id="5bR-YS-Fp1" customClass="FirstScreen" customModule="Made_In_Heaven" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8mF-xN-5US">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s48-0x-oUA">
+                                <rect key="frame" x="20" y="525" width="374" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The World is a humanoid stand controlled by its user, Dio. The World has a very tall and muscular build. The back of both its hands bears the shape of a simple clock face. The World is an exceptionally powerful Close-range Stand. It's overwhelming physical might and near unstoppable control over time undeniably makes it one of the most dangerous stands in the entire series. The World possesses phenomenal strength , senses, precision, and incredible speed. The World's power is its ability to stop time, allowing only itself, Dio and anyone with the same power to act within the duration of stopped time. All force applied by Dio during the time stop continues to exist after time resumes. Another unique feature of the time stop is how DIo can seemingly float in stopped time. Since no forces  other than the time stopper's exist during a time stop, there is no force of gravity, allowing Dio to move freely in space as he wishes, with the help of his stand.</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TheWorldTimeStop" translatesAutoresizingMaskIntoConstraints="NO" id="hSQ-24-PS5">
+                                <rect key="frame" x="-27" y="101" width="469" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="15N-BK-acb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Hzj-WD-clv"/>
+                    <navigationItem key="navigationItem" id="Hzj-WD-clv">
+                        <barButtonItem key="rightBarButtonItem" title="Next &gt;" style="plain" id="w3s-Xk-7Ps">
+                            <connections>
+                                <segue destination="1E7-Uv-7Mf" kind="show" identifier="secondSegue" id="fc7-fF-Bim"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lst-E4-cs0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1603" y="89"/>
+            <point key="canvasLocation" x="1625" y="74"/>
+        </scene>
+        <!--Second Screen-->
+        <scene sceneID="4BZ-GI-QjD">
+            <objects>
+                <viewController id="1E7-Uv-7Mf" customClass="SecondScreen" customModule="Made_In_Heaven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PkE-WD-6gw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ger" translatesAutoresizingMaskIntoConstraints="NO" id="O1z-A4-Ri7">
+                                <rect key="frame" x="20" y="-26" width="379" height="535"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hgb-NT-Mkw">
+                                <rect key="frame" x="22" y="394" width="374" height="516"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Gold Experience Requiem is a humanoid Stand of a height and build similar to it's weilder, Giorno Giovanna. Many of it's features resemble the original Gold Experience, including the lady bugson its hands and the oblong grooves across its body. Its head extends into pointed tips with the back of the head hollow, giving it the appearance of a crown. It's eyes have a unique design among Stands, with the 'eyeballs' embedded in cross-like structure within slanted sockets. Gold Experience Requiem is a close-range Requiem Stand that boats an incredible increase in both speed and power compared to its previous form and it can't be compared to normal stand stats. Created by the Arrow and born from Giorno's strong desire to defeat King Crimson and exact revenge on Diavolo, it wields the arcane power of reverting anything to "zero", effectively undoing their actions; a power that even triumphs over the time erasure/nullification ability of King Crimson. Gold Experience Requiem is powerful enough as a stand that it permits Giorno to levitate with it. Due to increased power, Gold Experience Requiem has the ability to fire a stone fast enough that it ceases to be visible to the human eye, and has enough power behind it to penetrate through a hand and destroy part of a building, as well as generating beams made purly of life energy. Gold Experience Requiem's ultimate ability is to revert actions and willpower back to the state of "zero" completley nullifying them and preventing them from becoming "real". If the opponent is killed by Gold Experience Requiem, then they will continuously experience death, as they will die but repeatedly return to point "zero": the point immediately before the process of death.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RxU-Ym-IyE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iHR-78-LyB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPq-nF-M0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302.898550724638" y="73.660714285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CCj-g2-C3J">
@@ -106,8 +166,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TheWorldTimeStop" width="250" height="403"/>
+        <image name="ger" width="466" height="351"/>
         <image name="jojotitle" width="1280" height="544"/>
         <image name="standarrow" width="401" height="376"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

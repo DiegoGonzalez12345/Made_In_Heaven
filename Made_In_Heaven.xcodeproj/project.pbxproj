@@ -14,6 +14,7 @@
 		B0A7CAF526EBC0C300F02461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A7CAF326EBC0C300F02461 /* Main.storyboard */; };
 		B0A7CAF726EBC0C400F02461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A7CAF626EBC0C400F02461 /* Assets.xcassets */; };
 		B0A7CAFA26EBC0C400F02461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A7CAF826EBC0C400F02461 /* LaunchScreen.storyboard */; };
+		B0FE2D98275A8CAE00B75D0C /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FE2D97275A8CAE00B75D0C /* SecondScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B0A7CAF626EBC0C400F02461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0A7CAF926EBC0C400F02461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0A7CAFB26EBC0C400F02461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FE2D97275A8CAE00B75D0C /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B07B84B627593DFB00B85DD5 /* FirstScreen.swift */,
 				B0A7CAF126EBC0C300F02461 /* ViewController.swift */,
 				B0A7CAF326EBC0C300F02461 /* Main.storyboard */,
+				B0FE2D97275A8CAE00B75D0C /* SecondScreen.swift */,
 				B0A7CAF626EBC0C400F02461 /* Assets.xcassets */,
 				B0A7CAF826EBC0C400F02461 /* LaunchScreen.storyboard */,
 				B0A7CAFB26EBC0C400F02461 /* Info.plist */,
@@ -144,6 +147,7 @@
 				B0A7CAF226EBC0C300F02461 /* ViewController.swift in Sources */,
 				B0A7CAEE26EBC0C300F02461 /* AppDelegate.swift in Sources */,
 				B0A7CAF026EBC0C300F02461 /* SceneDelegate.swift in Sources */,
+				B0FE2D98275A8CAE00B75D0C /* SecondScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
